@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*::after *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.section__margin {
+    margin: 4rem 5rem;
+}
+
+.section__padding {
+    padding: 2rem 5rem;
+}
+
+/* Nav */
+
+.dentalist__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 5rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.dentalist__nav-menu-item {
+    margin: 0 1.5rem;
+}
+
+.dentalist__nav-menu-item a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #181945;
+}
+
+button {
+    color: #583FBC;
+    background-color: #583FBC;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+}
+
+/* Header */
+
+.dentalist__header {
+    /* background-image: url("assets/header-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 2rem;
+    width: 100%; */
+}
+
+.dentalist__header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #DBEFFA;
+    margin: 0 1rem;
+    border-radius: 2rem;
+    padding-bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dentalist__header-content {
+    min-width: 400px;
+    max-width: 50%;
+    min-height: 200px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+
+.dentalist__header-content h1 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.04em;
+    color: #181945;
+    margin-bottom: 1rem;
+    margin-top: 0;
+
+}
+
+.dentalist__header-content p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.02em;
+    color: #181945;
+    opacity: 0.7;
+}
+
+.dentalist__header-content--cta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dentalist__header-content--cta-button {
+    padding: 1.2rem 2.5rem;
+}
+
+.dentalist__header-content--emergency-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.dentalist__header-content--emergency-contact-details h5 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #583FBC;
+    margin: 0 0 0 1rem;
+}
+
+.dentalist__header-content--emergency-contact-details p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: #181945;
+    margin: 0 0 0 1rem;
+}
+
+.dentalist__header-image {
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    bottom: -4px;
+}
+
+.dentalist__header-image img {
+    width: 100%;
+}
+
+
+@media screen and (max-width:1080px) {
+    .dentalist__header-content--cta {
+        margin-top: 2rem;
+    }
+
+    .dentalist__header-content h1 {
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 60px;
+        letter-spacing: -0.08em;
+    }
+
+    .dentalist__header-content p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+    }
+
+    .dentalist__header-content--cta-button {
+        padding: .5rem 1.5rem;
+    }
+
+    .dentalist__header-content--emergency-contact {
+        margin-left: 2rem;
+    }
+
+}
+
+.dentalist__statement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+
+.dentalist__statement h2 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #181945;
+    width: 840px;
+
+}
+
+.dentalist__divider {
+    width: 120px;
+    height: 4px;
+    background: #583FBC;
+    border-radius: 2px;
+}
+
+
+/* Services */
+
+.dentalist__services h5 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #583FBC;
+    margin: 0;
+}
+
+.dentalist__services-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dentalist__services-text h1 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: -0.04em;
+    color: #181945;
+    padding-right: 2rem;
+    width: 40%;
+    margin: 1rem 0;
+}
+
+.dentalist__services-text p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.02em;
+    color: #181945;
+    opacity: 0.6;
+    padding-left: 2rem;
+    width: 40%;
+}
+
+.dentalist__services-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.card-style {
+    background: #fff;
+    border: 1px solid;
+    border: 1px solid rgba(24, 25, 69, 0.1);
+    border-radius: 40px;
+    margin: 0 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-basis: 200px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dentures {
+    background: #DBEFFA;
+    padding: 3rem 4.5rem;
+    border-radius: 32px;
+}
+
+.implants {
+    background: #DBDEFA;
+    padding: 3rem 4.5rem;
+    border-radius: 32px;
+}
+
+.whitening {
+    background: #F6DBFA;
+    padding: 3rem 4.5rem;
+    border-radius: 32px;
+}
+
+.root-canal {
+    background: #FADBE2;
+    padding: 3rem 4.5rem;
+    border-radius: 32px;
+}
+
+.card-style h3 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #181945;
+    margin-bottom: 1rem;
+}
+
+
+.card-style p {
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #181945;
+    opacity: 0.5;
+    margin-top: 0;
+}
